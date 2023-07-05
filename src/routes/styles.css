@@ -45,8 +45,20 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   font-family: var(--font-heading);
   font-weight: 400;
+  color: var(--color-heading);
 }
 
+h1 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 1.05em;
+}
+
+p {
+  font-size: .9em;
+}
 
 input,
 button {

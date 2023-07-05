@@ -3,6 +3,7 @@
   import { _ } from "svelte-i18n";
 
 </script>
+
 <header>
   <nav>
     <NavLink href="/">{$_("nav.home")}</NavLink>
@@ -22,6 +23,5 @@
     justify-content: center;
     align-items: center;
     height: 2.6em;
-
   }
 </style>

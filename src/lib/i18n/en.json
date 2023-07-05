@@ -8,5 +8,10 @@
     "socials": {
         "linkedin": "Say Hi on Linkedin",
         "email": "Send an email"
+    },
+    "introduction": {
+        "greetings": "Greetings, I'm",
+        "profession": "Data Visualization Designer and Data Analyst",
+        "goal": "I spark people's interest and curiosity to your data on online or physical mediums."
     }
 }

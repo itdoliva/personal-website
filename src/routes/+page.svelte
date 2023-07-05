@@ -1,7 +1,7 @@
 <script>
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import SelfIntroduction from '$lib/components/organisms/SelfIntroduction.svelte';
+	import SelfIntro from '$lib/components/organisms/SelfIntro.svelte';
 </script>
 
 <svelte:head>
@@ -11,7 +11,7 @@
 
 <section>
 	
-<SelfIntroduction />
+<SelfIntro />
 	
 
 </section>
@@ -20,7 +20,7 @@
 	section {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-start;
 		align-items: center;
 		flex: 0.6;
 	}
