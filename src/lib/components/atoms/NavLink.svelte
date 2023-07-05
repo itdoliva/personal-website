@@ -35,12 +35,13 @@
     text-align: center;
     font-size: .75em;
     padding: .25em 0;
+    font-weight: 400;
 
     text-transform: uppercase;
   }
 
   a.active .title {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .axis {

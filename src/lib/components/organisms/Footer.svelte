@@ -1,12 +1,13 @@
 <script>
 	import Socials from "$lib/components/molecules/Socials.svelte";
+  import { _ } from "svelte-i18n";
 
 </script>
 
 <footer>
-  <Socials />
+  <Socials onAccent />
   <div class="div-line" />
-  <p>© 2023 Designed and developed by Italo Oliveira. All rights reserved.</p>
+  <p>{$_("footer")}</p>
 </footer>
 
 <style>
@@ -16,17 +17,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 10px;
     padding: 1em 0;
+    font-size: 12px;
   }
 
   .div-line {
     width: 25%;
     height: 1px;
     background-color: var(--color-on-accent);
+    opacity: .25;
   }
 
   p { 
+    font-family: var(--font-heading);
     margin: 0;
     color: var(--color-on-accent);
     text-align: center;

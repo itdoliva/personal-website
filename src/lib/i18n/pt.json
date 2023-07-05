@@ -1,1 +1,8 @@
-{}
+{
+    "nav": {
+        "home": "Home",
+        "work": "Work",
+        "blog": "Blog"
+    },
+    "footer": "© 2023 Designed and developed by Italo Oliveira. All rights reserved."
+}

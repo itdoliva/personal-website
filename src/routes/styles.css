@@ -1,19 +1,34 @@
 @import '@fontsource-variable/syne';
-@import '@fontsource/aileron';
+@import '@fontsource/aileron/300.css';
+@import '@fontsource/aileron/400.css';
+@import '@fontsource/aileron/600.css';
+@import '@fontsource/aileron/700.css';
+@import '@fontsource/aileron/800.css';
 
 :root {
-  --font-heading: Syne, -apple-system, sans-serif;
-  --font-body: Aileron, -apple-system, sans-serif;
+  --font-heading: 'Syne Variable', -apple-system, sans-serif;
+  --font-body: 'Aileron', -apple-system, sans-serif;
 
-  --color-background: rgb(250, 250, 250);
-  --color-primary: rgb(66, 66, 62);
-  --color-accent: rgb(164, 178, 39);
-  --color-heading: rgb(50, 61, 78);
-  --color-text: rgb(35, 35, 35);
-  --color-on-accent: rgb(250, 250, 250);
+  --color-background-rgb: 250, 250, 250;
+  --color-background: rgb(var(--color-background-rgb));
+  --color-primary-rgb: 66, 66, 62;
+  --color-primary: rgb(var(--color-primary-rgb));
+  --color-accent-rgb: 164, 178, 39;
+  --color-accent: rgb(var(--color-accent-rgb));
+  --color-heading-rgb: 50, 61, 78;
+  --color-heading: rgb(var(--color-heading-rgb));
+  --color-text-rgb: 35, 35, 35;
+  --color-text: rgb(var(--color-text-rgb));
+  --color-on-accent-rgb: 250, 250, 250;
+  --color-on-accent: rgb(var(--color-on-accent-rgb));
 
 	font-family: var(--font-body);
 	color: var(--color-text);
+
+  --gap-lesser: 4px;
+  --gap-lower-medium: 14px;
+  --gap-upper-medium: 24px;
+  --gap-greater: 48px;
 }
 
 body {
@@ -27,7 +42,9 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 400;
 }
 
 

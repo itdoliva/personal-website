@@ -2,18 +2,23 @@
   import Header from '$lib/components/organisms/Header.svelte';
   import Footer from '$lib/components/organisms/Footer.svelte';
   import './styles.css';
-  import '$lib/i18n/i18n.js';
+  import { isLoading } from 'svelte-i18n';
 </script>
 
 <div class="app">
-	<Header />
 
-	<main>
-		<slot />
-	</main>
-
-  <Footer />
+	{#if $isLoading}
+		Please wait...
+	{:else}
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	{/if}
 </div>
+
+
 
 <style>
 	.app {
