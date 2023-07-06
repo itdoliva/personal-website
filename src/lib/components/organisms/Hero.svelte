@@ -3,7 +3,7 @@
   import { _ } from "svelte-i18n";
 </script>
 
-<div class="self-intro">
+<section id="hero">
 
   <div class="introduction">
 
@@ -28,11 +28,11 @@
     <p>{$_("introduction.goal")}</p>
   </div>
 
-</div>
+</section>
 
 <style lang="scss">
 
-  .self-intro {
+  #hero {
     display: flex;
     flex-direction: column;
   }

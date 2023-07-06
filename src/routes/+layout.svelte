@@ -8,13 +8,17 @@
 <div class="app">
 
 	{#if $isLoading}
-		Please wait...
+
+		<p>Please wait...</p>
+
 	{:else}
+
 		<Header />
 		<main>
 			<slot />
 		</main>
 		<Footer />
+		
 	{/if}
 </div>
 

@@ -1,7 +1,5 @@
 <script>
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-	import SelfIntro from '$lib/components/organisms/SelfIntro.svelte';
+	import SelfIntro from '$lib/components/organisms/Hero.svelte';
 </script>
 
 <svelte:head>
