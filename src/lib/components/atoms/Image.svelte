@@ -4,7 +4,7 @@
   export let src: string
   export let alt: string
 
-  export let formats: string[] = ['avif', 'webp', 'png']
+  export let formats: string[] = ['png']
   export let widths: string[] | undefined = undefined
 
   $: fileName = src.split('.')[0]
