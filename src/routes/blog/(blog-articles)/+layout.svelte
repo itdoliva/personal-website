@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { siteBaseUrl, title } from "$lib/data/meta";
+  import { siteBaseUrl, siteTitle } from "$lib/data/meta";
 
   export let data;
   $: ({ blog } = data);
@@ -13,9 +13,9 @@
 		<meta name="twitter:description" content={blog.excerpt} />
 		<link rel="canonical" href="{siteBaseUrl}/{blog.slug}" />
 
-		<title>{blog.title} - {title}</title>
-		<meta property="og:title" content="{blog.title} - {title}" />
-		<meta name="twitter:title" content="{blog.title} - {title}" />
+		<title>{blog.title} - {siteTitle}</title>
+		<meta property="og:title" content="{blog.siteTitle} - {siteTitle}" />
+		<meta name="twitter:title" content="{blog.siteTitle} - {siteTitle}" />
 
 		{#if blog.coverImage}
 			<meta property="og:image" content="{siteBaseUrl}{blog.coverImage}" />
