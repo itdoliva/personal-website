@@ -12,6 +12,9 @@
     "introduction": {
         "greetings": "Greetings, I'm",
         "profession": "Data Visualization Designer and Data Analyst",
-        "goal": "I spark people's interest and curiosity to your data on online or physical mediums."
+        "goal": "My passion is to spark people's attraction into facts that really matter."
+    },
+    "project": {
+        "visit": "Visit the Project"
     }
 }

@@ -2,14 +2,5 @@
   "i18n-ally.localesPaths": [
     "src/lib/i18n"
   ],
-  "frontMatter.framework.id": "other",
-  "frontMatter.content.publicFolder": "",
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "apragareal",
-      "path": "[[workspace]]/src/routes/(project-article)/apragareal"
-    }
-  ],
-  "frontMatter.taxonomy.tags": [],
-  "frontMatter.taxonomy.categories": []
+  "i18n-ally.keystyle": "nested"
 }

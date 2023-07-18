@@ -20,6 +20,7 @@
     gap: 10px;
     padding: 1em 0;
     font-size: 12px;
+    margin-top: 4em;
   }
 
   .div-line {

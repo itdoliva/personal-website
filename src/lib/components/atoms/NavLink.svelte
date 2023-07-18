@@ -12,12 +12,12 @@
 
   <div class="axis"/>
 
-  <span class="title">
-    <slot></slot>
-  </span>
+  <div class="title">
+    <p><slot></slot></p>
+  </div>
 </a>
 
-<style>
+<style lang="scss">
   a {
     --bar-width: 54px; 
 
@@ -27,58 +27,85 @@
     justify-content: flex-end;
     align-items: center;
     font-size: 1em;
+
+    &.active {
+      .title {
+        p {
+          font-weight: 700;
+        }
+      }
+
+      .bar-container {
+        .bar {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover:not(.active) {
+      .bar {
+        height: 75%;
+        opacity: .6;
+      }
+    }
+
+    .bar-container {
+      width: var(--bar-width);
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: stretch;
+
+      .bar {
+        border-radius: .2em .2em 0 0;
+        height: 25%;
+        background: var(--color-heading);
+        opacity: .4;
+        flex-shrink: 1;
+
+        transition: height .2s ease-in-out, opacity .2s ease-in-out;
+      }
+    }
+
+    .axis {
+      width: calc(var(--bar-width) * 1.4);
+      height: 1px;
+      background-color: var(--color-primary);
+      opacity: .8;
+    }
+
+    .title {
+      position: relative;
+      flex: 0 1 35%;
+      
+      p {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        margin: 0;
+        text-align: center;
+        font-size: .75em;
+        padding: .25em 0;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+
+    
+
   }
   
-  .title {
-    flex-grow: 0;
-    flex-shrink: 1;
-    text-align: center;
-    font-size: .75em;
-    padding: .25em 0;
-    font-weight: 400;
 
-    text-transform: uppercase;
-  }
 
-  a.active .title {
-    font-weight: 700;
-  }
 
-  .axis {
-    width: calc(var(--bar-width) * 1.4);
-    height: 1px;
-    background-color: var(--color-primary);
-    opacity: .8;
-  }
 
-  .bar-container {
-    width: var(--bar-width);
-    flex-grow: 1;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: stretch;
-  }
   
-  .bar {
-    border-radius: .2em .2em 0 0;
-    height: 25%;
-    background: var(--color-primary);
-    opacity: .4;
-    flex-shrink: 1;
 
-    transition: height .2s ease-in-out, opacity .2s ease-in-out;
-  }
 
-  a:hover .bar,
-  a.active .bar {
-    height: 100%;
-  }
 
-  a:hover:not(.active) .bar {
-    opacity: .6;
-  }
 
 
 

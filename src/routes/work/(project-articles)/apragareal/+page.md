@@ -1,13 +1,32 @@
 ---
 title: APRAGAREAL
-slug: apragareal
-coverImage: /images/projects/apragareal.png
-date: 2023-07-06T02:51:15.695Z
-excerpt: Visual project which compares the maximum concentration of pesticides according to Brazil's and European Union's legislation.
-tags:
+link: https://itdoliva.github.io/apragareal/
+details:
+  - name: Support
+    value: Desktop and mobile
+  - name: Main Skills
+    value: 
+      - D3.js
+      - React JS
+      - SVG
+      - Figma
+tags: 
+  - Website Visualization
   - Data Journalism
-  - Interactive
+gallery:
+    - pest-overview.png
+widths:
+  - 480w
+  - 640w
+slug: apragareal
+date: 2022-12-06T00:00:00.000Z
+category: project
+excerpt: Visual project which compares the maximum concentration of pesticides according to Brazil's and European Union's legislation.
 ---
+
+<script>
+  import Footnote from "$lib/components/atoms/Footnote.svelte"
+</script>
 
 Since 2008, Brazil has been the largest consumer of pesticides in the world. In addition to not knowing this unfortunately-stable title, Brazilians - daily poisoned by their meals - also do not understand the weakness of the national parameters that limit the level of pesticides in food. Ignorance inhibits the origin and dissemination of popular movements capable of preventing bills - such as bill 6299/2002 - which, by suggesting flexibility and modernization, tries to expose Brazilian soil, food and bodies to an even higher concentration of poison.
 
@@ -15,4 +34,6 @@ APRAGAREAL is a personal project which aims to demonstrate how the maximum resid
 
 In June 2022, I found on Ibama's website the most recent list - referring to 2020 - of the top 10 sold active ingredients¹ in Brazil. From it, I gathered their maximum residue limits for each crop in Brazil and in the European Union.
 
+<Footnote>
 ¹ Sulfur, the eighth most sold active ingredient in Brazil in 2020, was not analyzed in this project due to its presence in several more complex active ingredients that makes comparisons difficult.
+</Footnote>

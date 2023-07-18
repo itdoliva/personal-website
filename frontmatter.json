@@ -8,25 +8,34 @@
       "fields": [
         {
           "title": "title",
-          "name": "title",
+          "name": "Title",
           "type": "string"
         },
         {
           "title": "coverImage",
-          "name": "coverImage",
-          "type": "image"
+          "name": "Cover Image",
+          "type": "string"
         },
         {
           "title": "date",
-          "name": "date",
+          "name": "Date",
           "type": "datetime"
         },
         {
           "title": "tags",
-          "name": "tags",
+          "name": "Tags",
           "type": "tags"
         }
       ]
     }
-  ]
+  ],
+  "frontMatter.content.pageFolders": [
+    {
+      "path": "[[workspace]]/src/routes/work/(project-articles)/apragareal"
+    }
+  ],
+  "frontMatter.content.publicFolder": "",
+  "frontMatter.framework.id": "other",
+  "frontMatter.taxonomy.categories": [],
+  "frontMatter.taxonomy.tags": []
 }

@@ -18,14 +18,7 @@
   </div>
 
   <div class="role">
-    <div class="bubbles">
-      <span class='b b-0' />
-      <span class='b b-1' />
-      <span class='b b-2' />
-      <span class='b b-1' />
-      <span class='b b-0' />
-    </div>
-    <p>{$_("introduction.goal")}</p>
+    <h2>{$_("introduction.goal")}</h2>
   </div>
 
 </section>
@@ -35,6 +28,7 @@
   #hero {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
   }
 
   .introduction {
@@ -53,40 +47,17 @@
 
     .div-line {
       width: 25%;
-      height: 2px;
+      height: 1px;
       background-color: var(--color-primary);
       opacity: .2;
     }
   }
 
   .role {
-    p {
+    h2 {
       text-align: center;
     }
 
-    .bubbles {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: var(--gap-lesser);
-
-      .b {
-        border-radius: 100%;
-        background-color: var(--color-primary);
-        opacity: .2;
-        aspect-ratio: 1/1;
-
-        &.b-0 {
-          width: .4em;
-        }   
-        &.b-1 {
-          width: .65em;
-        }   
-        &.b-2 {
-          width: 1.1em;
-        }
-      }
-    }
   }
 
 </style>

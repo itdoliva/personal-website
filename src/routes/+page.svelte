@@ -1,45 +1,30 @@
 <script>
-	import SelfIntro from '$lib/components/organisms/Hero.svelte';
+	import Hero from '$lib/components/organisms/Hero.svelte';
+	import ProjectsSection from '$lib/components/organisms/ProjectsSection.svelte';
+	export let data
+
+	let { blogs, projects, moreProjects } = data
 </script>
 
 <svelte:head>
 	<title>Home • Italo Doliva</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Italo Doliva" />
 </svelte:head>
 
-<section>
 	
-<SelfIntro />
-	
+<Hero />
 
-</section>
+{#if projects.length}
+	<ProjectsSection title="My Work" {projects} {moreProjects}/>
+{/if}
+
+{#if blogs.length}
+	<h1>Some blogs to be displayed</h1>
+{/if}
+
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		flex: 0.6;
-	}
-
 	h1 {
 		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>
