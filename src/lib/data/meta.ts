@@ -5,5 +5,3 @@
 export const siteBaseUrl = 'https://italodoliva.com.br/';
 export const siteTitle = 'Italo Doliva';
 
-export const description = 
-  ""

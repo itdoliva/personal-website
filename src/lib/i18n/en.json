@@ -1,4 +1,7 @@
 {
+    "meta": {
+        "description": "Italo Doliva • Sparking people's attraction into data facts."
+    },
     "nav": {
         "home": "Home",
         "work": "Work",
@@ -9,10 +12,10 @@
         "linkedin": "Say Hi on Linkedin",
         "email": "Send an email"
     },
-    "introduction": {
+    "hero": {
         "greetings": "Greetings, I'm",
         "profession": "Data Visualization Designer and Data Analyst",
-        "goal": "My passion is to spark people's attraction into facts that really matter."
+        "goal": "My passion is to spark people's attraction into data facts."
     },
     "project": {
         "visit": "Visit the Project"

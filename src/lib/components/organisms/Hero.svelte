@@ -8,9 +8,9 @@
   <div class="introduction">
 
     <div class="introduction-headings">
-      <h3>{$_("introduction.greetings")}</h3>
+      <h3>{$_("hero.greetings")}</h3>
       <h1>Italo Doliva 👋</h1>
-      <h3>{$_("introduction.profession")}</h3>
+      <h3>{$_("hero.profession")}</h3>
     </div>
 
     <div class="div-line" />
@@ -18,7 +18,7 @@
   </div>
 
   <div class="role">
-    <h2>{$_("introduction.goal")}</h2>
+    <h2>{$_("hero.goal")}</h2>
   </div>
 
 </section>
