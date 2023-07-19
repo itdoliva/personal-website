@@ -19,3 +19,5 @@ date: 2023-06-28T00:00:00.000Z
 category: project
 excerpt: 
 ---
+
+I have celebrated my pride by publishing this interactive data visualization that allows to compare the legal situation and living conditions of queer people in different regions across the world.
