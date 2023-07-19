@@ -30,7 +30,7 @@
 </svelte:head>
 
 <div class="article-layout">
-
+	{#if project}
 	<div class="header left-column">
 		<h2 class="title">{project.title}</h2>
 		{#if project.link}
@@ -74,6 +74,7 @@
 			{/each}
 		{/if}
 	</div>
+	{/if}
 </div>
 
 <style lang="scss">

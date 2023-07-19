@@ -14,8 +14,6 @@ export const importContents = (render = false) => {
     }
   }
 
-  console.log(contents)
-
   return contents;
 }
 

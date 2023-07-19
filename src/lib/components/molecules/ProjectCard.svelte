@@ -42,10 +42,6 @@ additionalClass="project-card {!showImage || !coverImage ? 'no-image' : ''}"
 </Card>
 
 <style lang="scss">
-  .project-card {
-    max-width: 380px;
-  }
-
 	.content {
 		display: flex;
 		flex-direction: column;
@@ -73,11 +69,6 @@ additionalClass="project-card {!showImage || !coverImage ? 'no-image' : ''}"
 		align-items: center;
 		gap: var(--gap-lower-medium);
 		flex-wrap: wrap;
-	}
-
-	.note {
-		font-size: 0.8rem;
-		color: rgba(var(--color--text-rgb), 0.8);
 	}
 
 
