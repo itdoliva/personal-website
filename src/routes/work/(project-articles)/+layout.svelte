@@ -14,18 +14,16 @@
   {#if project}
 		<link rel="canonical" href="{siteBaseUrl}work/{project.slug}" />
 
-		<meta name="description" content={project.excerpt} />
-		<meta property="og:description" content={project.excerpt} />
-		<meta name="twitter:description" content={project.excerpt} />
+		<meta name="description" content={project.excerpt ? project.excerpt : $_("meta.description")} />
+		<meta property="og:description" content={project.excerpt ? project.excerpt : $_("meta.description")} />
+		<meta name="twitter:description" content={project.excerpt ? project.excerpt : $_("meta.description")} />
 
 		<title>{project.title} • {siteTitle}</title>
 		<meta property="og:title" content="{project.title} • {siteTitle}" />
 		<meta name="twitter:title" content="{project.title} • {siteTitle}" />
 
-		{#if project.coverImage}
-			<meta property="og:image" content="{siteBaseUrl}images/projects/{project.slug}/cover.png" />
-			<meta name="twitter:image" content="{siteBaseUrl}images/projects/{project.slug}/cover.png" />
-		{/if}
+		<meta property="og:image" content="{siteBaseUrl}images/projects/{project.slug}/cover.png" />
+		<meta name="twitter:image" content="{siteBaseUrl}images/projects/{project.slug}/cover.png" />
 
   {/if}
 </svelte:head>
