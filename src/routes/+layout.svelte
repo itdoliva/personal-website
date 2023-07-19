@@ -5,6 +5,18 @@
   import { isLoading } from 'svelte-i18n';
 </script>
 
+<svelte:head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJBPZ3FWP0"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-CJBPZ3FWP0');
+	</script>
+</svelte:head>
+
 <div class="app">
 
 	{#if $isLoading}
