@@ -1,10 +1,11 @@
 <script lang='ts'>
   export let href: string = '/'
   import { page } from '$app/stores';
+  import { stripEdgeSlashes } from '$lib/utils/fmtstr';
 
 </script>
 
-<a {href} class:active={$page.url.pathname === href}> 
+<a {href} class:active={stripEdgeSlashes($page.url.pathname) === stripEdgeSlashes(href)}> 
 
   <div class="bar-container">
     <div class="bar"/>
